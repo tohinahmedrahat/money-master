@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="money.jpg" type="image/x-icon" />
+    <title>Money Master 💰</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header class="pt-10">
+      <h1 class="text-center text-[#31A5AC] font-bold text-5xl">
+        Money Master💰
+      </h1>
+    </header>
+
+    <main>
+      <section class="flex gap-10 px-20 pb-20 pt-10 w-full">
+        <div class="w-3/4">
+          <img
+            src="./img/money-master.png"
+            class="w-full h-full rounded"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="w-3/6 bg-slate-200 text-center py-5 flex justify-center items-center rounded"
+        >
+          <div class="p-5">
+            <h2 class="text-2xl font-medium my-5">Income</h2>
+
+            <p class="font-semibold text-right">
+              Income:
+              <input
+                placeholder="Income Amount"
+                id="income"
+                type="number"
+                class="outline-0 bg-slate-300 ml-2 p-2 rounded"
+              />
+            </p>
+
+            <h2 class="text-2xl font-medium my-5">Expenses</h2>
+
+            <p class="font-semibold text-right">
+              Food:
+              <input
+                placeholder="Food-Expenses"
+                id="food"
+                type="number"
+                class="outline-0 bg-slate-300 ml-2 p-2 rounded"
+              />
+            </p>
+            <p class="font-semibold text-right mt-4">
+              Rent:
+              <input
+                placeholder="Rent-Expenses"
+                id="rent"
+                type="number"
+                class="outline-0 bg-slate-300 ml-2 p-2 rounded"
+              />
+            </p>
+            <p class="font-semibold text-right my-4">
+              Clothes:
+              <input
+                required
+                placeholder="Clothes-Expenses"
+                id="cloth"
+                type="number"
+                class="outline-0 bg-slate-300 ml-2 p-2 rounded"
+              />
+            </p>
+
+            <button
+              id="cal"
+              type="button"
+              class="px-14 py-3 bg-blue-400 hover:bg-blue-600 text-white font-bold rounded"
+            >
+              Calculate
+            </button>
+
+            <h2 class="text-2xl font-medium my-5">
+              Total Expenses: <span id="total">0</span>
+            </h2>
+            <h2 class="text-2xl font-medium my-5">
+              Balance: <span id="balance">0</span>
+            </h2>
+
+            <span class="font-semibold"
+              >Save:
+              <input
+                placeholder="Savings (%)"
+                id="save"
+                type="number"
+                class="outline-0 py-2 w-32 px-2 bg-slate-300 ml-2 rounded"
+              />
+              %
+            </span>
+            <button
+              id="saveBtn"
+              type="button"
+              class="px-14 py-2 bg-blue-400 hover:bg-blue-600 text-white font-bold rounded"
+            >
+              Save
+            </button>
+
+            <h2 class="text-2xl font-medium my-5">
+              Saving Amount: <span id="savingAmount">0</span>
+            </h2>
+            <h2 class="text-2xl font-medium my-5">
+              Remaining Balance: <span id="remain">0</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
