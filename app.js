@@ -55,11 +55,12 @@ document.getElementById("saveBtn").addEventListener("click", function () {
 //   get total balnce remaing
   const balance =document.getElementById("balance");
   const balanceString = balance.innerText;
+  console.log(balanceString.length);
   const balanceValue = parseFloat(balanceString);
 //   get saving value
   const saving = getInputValue("save");
 //   check input value is NaN or not;
-  if(isNaN(saving)){
+  if(isNaN(saving) || balanceString.length == 1){
     error.innerText = errorMassege;
     return;
   }else{
